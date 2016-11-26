@@ -42,25 +42,30 @@ my_dictionary = {
 #    number = number + 1
 
 class Dog(object):
-    def __init__(self, age, size, name):
+    def __init__(self, age, size, name, breed):
         self.age = age
         self.size = size
         self.name = name
+        self.breed = breed
 
 class Cat(object):
-   def __init__(self, age, size, name):
+   def __init__(self, age, size, name, breed):
        self.age = age
        self.size = size
        self.name = name
+       self.breed = breed
+
 my_sueage = Dog(
     13,
     "small",
-    "sueage"
+    "sueage",
+    "chihuahua"
 )
 my_baya = Dog(
     9,
     "large",
-    "baya"
+    "baya",
+    "boxer"
 )
 print my_sueage.age
 print my_sueage.size
@@ -72,7 +77,8 @@ print my_baya.name
 my_kitty_meow = Cat(
     12,
     "small",
-    "kitty meow"
+    "kitty meow",
+    "mutt"
 )
 
 print my_kitty_meow.age
